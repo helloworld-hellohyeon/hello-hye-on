@@ -1,0 +1,26 @@
+.title-wrapper {
+  border: 1px solid black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.scroll-title-box {
+  position: relative;
+  overflow: hidden;
+  height: 29px;
+  color: rgb(134, 134, 134);
+
+  .scroll-title {
+    opacity: 0;
+    position: absolute;
+    top: 29px;
+    left: 0;
+    background: #fff;
+    transition: top 0.5s ease, opacity 0.3s ease;
+
+    &.active {
+      opacity: 1;
+      top: 0px;
+    }
+  }
+}
