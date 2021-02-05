@@ -1,13 +1,29 @@
 .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 20vw;
+  min-height: 400px;
   border: 1px solid black;
-  font-weight: 700;
-  font-size: 20px;
 }
-
+.title-img {
+  width: 10vw;
+  height: 10vw;
+  min-width: 250px;
+  min-height: 250px;
+  max-width: 386px;
+  max-height: 386px;
+  background-color: lightgreen;
+}
+.title-box {
+  font-weight: 700;
+  font-size: 5rem;
+}
 .scroll-title-box {
   position: relative;
   overflow: hidden;
-  height: 29px;
+  height: 120px;
   color: rgb(134, 134, 134);
 
   .scroll-title {
@@ -15,8 +31,7 @@
     position: absolute;
     top: 29px;
     left: 0;
-    background: #fff;
-    transition: top 0.5s ease, opacity 0.3s ease;
+    transition: top 0.8s ease, opacity 0.6s ease;
 
     &.active {
       opacity: 1;
